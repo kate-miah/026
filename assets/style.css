@@ -4,6 +4,10 @@
     font-family: 'Mooli';
     src: url('/fonts/Mooli-Regular.ttf') format("truetype");
 }
+@font-face {
+    font-family: "Caveat";
+    src: url('/fonts/Caveat-VariableFont_wght.ttf');
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap'); */
 
 /*
@@ -27,8 +31,11 @@ at-rules (@)
 h1 {
     color: blueviolet;
     font-size: 2em;
-    font-weight: bolder;
     margin: 1em 0;
     font-family: "Mooli";
 
+}
+p {
+    font-size: 1.5em;
+    font-family: 'Caveat';
 }
