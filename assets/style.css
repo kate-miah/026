@@ -48,7 +48,7 @@ main {
     /* flex-wrap: wrap; */
     flex-direction: row;
     margin: 0 auto;
-    background-color: green;
+    
 }
 
 article { 
@@ -57,6 +57,7 @@ article {
     border-radius: 5px;
     margin: 1em;
     padding: 10px;
+    background-color: green;
 }
 
 h1 {
@@ -65,13 +66,14 @@ h1 {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     main {
         flex-direction: column;
-        background-color: yellowgreen;
+        
     }
 
     article {
         width: auto;
+        background-color: blue;
     }
 }
