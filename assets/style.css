@@ -42,6 +42,19 @@ at-rules (@)
 @counter-style
 
 */
+
+/* Breakpoint - точка зламу - размер после которого макет изменяется
+
+Breakpoint	        lass infix	Dimensions
+Extra small	        None	    <576px
+Small	            sm	        ≥576px
+Medium	            md	        ≥768px
+Large	            lg	        ≥992px
+Extra large	        xl	        ≥1200px
+Extra extra large	xxl	        ≥1400px
+
+
+*/
 main {
     width: 80%;
     display: flex;
@@ -66,7 +79,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
     main {
         flex-direction: column;
         
@@ -75,5 +88,14 @@ h1 {
     article {
         width: auto;
         background-color: blue;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article {
+        width: 30vw;
     }
 }
